@@ -4,6 +4,7 @@ use std::str::FromStr;
 use std::process;
 use rand::prelude::*;
 use rand_distr::StandardNormal;
+use std::f64;
 
 fn main() {
     let mut data:Vec<Vec<f32>> = vec![];
@@ -75,6 +76,12 @@ impl GaussianProb {
             dim
         }
     }
+    pub fn calculate_probability(data: Vec<Vec<f32>>) -> Vec<f32> {
+        let mut probs:Vec<f32> = vec![];
+        let one = 1.0_f64;
+    }
+    fn compute_prob(x: Vec<f32>) -> f32 {
+        let exp = x - mean
 }
 
 
